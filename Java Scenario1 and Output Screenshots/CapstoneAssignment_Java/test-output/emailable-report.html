@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">SeleniumBDDSuite</th></tr>
+<tr><td><a href="#t0">SeleniumBDDTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">4,280</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SeleniumBDDSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SeleniumBDDTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">BaseTest.BaseTest</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1702998288243</td><td rowspan="1">3203</td></tr></tbody>
+</table>
+<h2>SeleniumBDDTest</h2><h3 id="m0">BaseTest.BaseTest#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify various actions on the-internet.herokuapp.com&quot;</td><td>&quot;Selenium Capstone Project&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 120
+Current browser version is 119.0.6045.200 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;16F8C53C36F6587&apos;, ip: &apos;172.19.35.216&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.11&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 	GetHandleVerifier [0x00007FF7B4344D02+56194]
+	(No symbol) [0x00007FF7B42B04B2]
+	(No symbol) [0x00007FF7B41576AA]
+	(No symbol) [0x00007FF7B4191652]
+	(No symbol) [0x00007FF7B419094D]
+	(No symbol) [0x00007FF7B418B84F]
+	(No symbol) [0x00007FF7B4187DC2]
+	(No symbol) [0x00007FF7B41D0954]
+	(No symbol) [0x00007FF7B41C5C23]
+	(No symbol) [0x00007FF7B4194A45]
+	(No symbol) [0x00007FF7B4195AD4]
+	GetHandleVerifier [0x00007FF7B46BD5BB+3695675]
+	GetHandleVerifier [0x00007FF7B4716197+4059159]
+	GetHandleVerifier [0x00007FF7B470DF63+4025827]
+	GetHandleVerifier [0x00007FF7B43DF029+687785]
+	(No symbol) [0x00007FF7B42BB508]
+	(No symbol) [0x00007FF7B42B7564]
+	(No symbol) [0x00007FF7B42B76E9]
+	(No symbol) [0x00007FF7B42A8094]
+	BaseThreadInitThunk [0x00007FFF1BE77034+20]
+	RtlUserThreadStart [0x00007FFF1CA626A1+33]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at StepDefinations.StepDefination.user_launches_the_url(StepDefination.java:18)
+	at ✽.User launches the URL &quot;http://the-internet.herokuapp.com/&quot;(file:///C:/Users/Administrator/OneDrive/Desktop/CapstoneAssignment_Advanced/Java%20Scenario1%20and%20Output%20Screenshots/CapstoneAssignment_Java/src/test/java/FeatureFiles/CapstoneFeatures.feature:4)
+... Removed 4 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

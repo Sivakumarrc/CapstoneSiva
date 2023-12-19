@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-19T09:05:35 IST" name="Default suite" finished-at="2023-12-19T09:05:41 IST" duration-ms="5524">
+    <groups>
+    </groups>
+    <test started-at="2023-12-19T09:05:35 IST" name="Default test" finished-at="2023-12-19T09:05:41 IST" duration-ms="5524">
+      <class name="TestScripts.CountryTranslationTest">
+        <test-method signature="testCountryTranslation(java.lang.String)[pri:0, instance:TestScripts.CountryTranslationTest@505fc5a4]" started-at="2023-12-19T09:05:36 IST" name="testCountryTranslation" data-provider="translations" finished-at="2023-12-19T09:05:39 IST" duration-ms="2740" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[germany]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountryTranslation -->
+        <test-method signature="testCountryTranslation(java.lang.String)[pri:0, instance:TestScripts.CountryTranslationTest@505fc5a4]" started-at="2023-12-19T09:05:39 IST" name="testCountryTranslation" data-provider="translations" finished-at="2023-12-19T09:05:40 IST" duration-ms="951" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[alemania]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountryTranslation -->
+        <test-method signature="testCountryTranslation(java.lang.String)[pri:0, instance:TestScripts.CountryTranslationTest@505fc5a4]" started-at="2023-12-19T09:05:40 IST" name="testCountryTranslation" data-provider="translations" finished-at="2023-12-19T09:05:41 IST" duration-ms="1200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Saksamaa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCountryTranslation -->
+      </class> <!-- TestScripts.CountryTranslationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
