@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-19T20:34:47 IST" name="SeleniumBDDSuite" finished-at="2023-12-19T20:34:51 IST" duration-ms="4280">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:BaseTest.BaseTest@3b353651]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-12-19T20:34:47 IST" name="SeleniumBDDTest" finished-at="2023-12-19T20:34:51 IST" duration-ms="4280">
+      <class name="BaseTest.BaseTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:BaseTest.BaseTest@3b353651]" started-at="2023-12-19T20:34:47 IST" name="setUpClass" finished-at="2023-12-19T20:34:48 IST" duration-ms="926" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@72e36d0f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:BaseTest.BaseTest@3b353651]" started-at="2023-12-19T20:34:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-19T20:34:51 IST" duration-ms="3203" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify various actions on the-internet.herokuapp.com"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Selenium Capstone Project"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 120
+Current browser version is 119.0.6045.200 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '16F8C53C36F6587', ip: '172.19.35.216', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: GetHandleVerifier [0x00007FF7B4344D02+56194]
+(No symbol) [0x00007FF7B42B04B2]
+(No symbol) [0x00007FF7B41576AA]
+(No symbol) [0x00007FF7B4191652]
+(No symbol) [0x00007FF7B419094D]
+(No symbol) [0x00007FF7B418B84F]
+(No symbol) [0x00007FF7B4187DC2]
+(No symbol) [0x00007FF7B41D0954]
+(No symbol) [0x00007FF7B41C5C23]
+(No symbol) [0x00007FF7B4194A45]
+(No symbol) [0x00007FF7B4195AD4]
+GetHandleVerifier [0x00007FF7B46BD5BB+3695675]
+GetHandleVerifier [0x00007FF7B4716197+4059159]
+GetHandleVerifier [0x00007FF7B470DF63+4025827]
+GetHandleVerifier [0x00007FF7B43DF029+687785]
+(No symbol) [0x00007FF7B42BB508]
+(No symbol) [0x00007FF7B42B7564]
+(No symbol) [0x00007FF7B42B76E9]
+(No symbol) [0x00007FF7B42A8094]
+BaseThreadInitThunk [0x00007FFF1BE77034+20]
+RtlUserThreadStart [0x00007FFF1CA626A1+33]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 120
+Current browser version is 119.0.6045.200 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '16F8C53C36F6587', ip: '172.19.35.216', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: GetHandleVerifier [0x00007FF7B4344D02+56194]
+(No symbol) [0x00007FF7B42B04B2]
+(No symbol) [0x00007FF7B41576AA]
+(No symbol) [0x00007FF7B4191652]
+(No symbol) [0x00007FF7B419094D]
+(No symbol) [0x00007FF7B418B84F]
+(No symbol) [0x00007FF7B4187DC2]
+(No symbol) [0x00007FF7B41D0954]
+(No symbol) [0x00007FF7B41C5C23]
+(No symbol) [0x00007FF7B4194A45]
+(No symbol) [0x00007FF7B4195AD4]
+GetHandleVerifier [0x00007FF7B46BD5BB+3695675]
+GetHandleVerifier [0x00007FF7B4716197+4059159]
+GetHandleVerifier [0x00007FF7B470DF63+4025827]
+GetHandleVerifier [0x00007FF7B43DF029+687785]
+(No symbol) [0x00007FF7B42BB508]
+(No symbol) [0x00007FF7B42B7564]
+(No symbol) [0x00007FF7B42B76E9]
+(No symbol) [0x00007FF7B42A8094]
+BaseThreadInitThunk [0x00007FFF1BE77034+20]
+RtlUserThreadStart [0x00007FFF1CA626A1+33]
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at StepDefinations.StepDefination.user_launches_the_url(StepDefination.java:18)
+at ✽.User launches the URL "http://the-internet.herokuapp.com/"(file:///C:/Users/Administrator/OneDrive/Desktop/CapstoneAssignment_Advanced/Java%20Scenario1%20and%20Output%20Screenshots/CapstoneAssignment_Java/src/test/java/FeatureFiles/CapstoneFeatures.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:BaseTest.BaseTest@3b353651]" started-at="2023-12-19T20:34:51 IST" name="tearDownClass" finished-at="2023-12-19T20:34:51 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- BaseTest.BaseTest -->
+    </test> <!-- SeleniumBDDTest -->
+  </suite> <!-- SeleniumBDDSuite -->
+</testng-results>
